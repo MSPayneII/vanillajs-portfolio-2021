@@ -1,0 +1,128 @@
+.portfolio {
+  .btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 4rem;
+    gap: 1rem;
+    justify-content: space-around;
+
+    @include breakpoint-up(medium) {
+      flex-wrap: nowrap;
+      margin-bottom: 5rem;
+    }
+    @include breakpoint-up(large) {
+      gap: 2rem;
+      justify-content: space-between;
+    }
+  }
+
+  &__header {
+    h2 {
+      font-size: $fontLg;
+      font-weight: map-get($fontWeights, "bold");
+      line-height: 2.625rem;
+      letter-spacing: -0.36px;
+      text-align: left;
+      margin-bottom: 2.8125rem;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 7rem;
+
+    @include breakpoint-up(medium) {
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 6rem;
+    }
+
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__category-text {
+    margin-bottom: 3rem;
+  }
+
+  .project {
+    &__container {
+      overflow: hidden;
+      background-color: $veryLightGrey;
+      box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+      margin-bottom: 2rem;
+      width: 19.48rem;
+      height: 31rem;
+
+      @include breakpoint-up(medium) {
+        transition: all 300ms ease-in-out;
+        width: 21rem;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      @include breakpoint-up(large) {
+        width: 20.8rem;
+      }
+    }
+
+    &__image {
+      height: 14rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &__text {
+      padding: 1.5rem 1rem 2.5rem 1rem;
+      font-size: $bodyText2;
+      line-height: 1.875rem;
+      color: $grayishDarkBlue;
+      width: 20.4375rem;
+
+      @include breakpoint-up(medium) {
+        padding: 1.875rem 1.5625rem;
+      }
+    }
+    &__title {
+      font-size: $fontSm;
+      line-height: 2.625rem;
+      letter-spacing: -0.36px;
+      color: $grayishDarkBlue;
+      margin-bottom: 0.2rem;
+
+      &:hover {
+        color: $cyan;
+        transition: color 150ms ease-in-out;
+      }
+    }
+
+    &__client {
+      font-size: $bodyText1;
+      font-family: $body;
+      letter-spacing: -0.29px;
+      line-height: 2rem;
+      margin-bottom: 0.2rem;
+      color: $darkBlue;
+      font-weight: map-get($fontWeights, "regular");
+    }
+    // &__category {
+    //   font-size: $bodyText1;
+    //   font-family: $body;
+    //   letter-spacing: -0.29px;
+    //   line-height: 2rem;
+    //   margin-bottom: 0.2rem;
+    //   color: $cyan;
+    // }
+
+    &__description {
+      font-size: $bodyText2;
+      color: $grayishDarkBlue;
+    }
+  }
+}

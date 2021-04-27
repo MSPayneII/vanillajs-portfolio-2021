@@ -1,0 +1,44 @@
+.collaborate {
+  text-align: center;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    button {
+      width: 10.125rem;
+    }
+
+    hr {
+      display: none;
+
+      @include breakpoint-up(medium) {
+        display: inline-block;
+        width: 7.0625rem;
+      }
+
+      @include breakpoint-up(large) {
+        display: inline-block;
+        width: 26.375rem;
+      }
+    }
+    h2 {
+      font-size: $fontLg;
+      letter-spacing: -0.36px;
+      line-height: 2.625rem;
+      margin-bottom: 3rem;
+
+      @include breakpoint-up(medium) {
+        width: 20.375rem;
+        margin-bottom: 0rem;
+      }
+    }
+  }
+}

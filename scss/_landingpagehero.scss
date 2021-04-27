@@ -1,0 +1,64 @@
+.hero {
+  margin-bottom: 6rem;
+
+  @include breakpoint-up(large) {
+    margin-bottom: 9.375rem;
+  }
+
+  &__image {
+    position: relative;
+    background-image: url("../assets/hero-image.png");
+    background-size: 151%;
+    background-repeat: no-repeat;
+    background-position: center 67%;
+    height: 17rem;
+    margin-bottom: 1.9375rem;
+
+    @include breakpoint-up(medium) {
+      background-size: 148%;
+      background-repeat: no-repeat;
+      background-position: center 79%;
+      height: 31.5rem;
+    }
+
+    @include breakpoint-up(large) {
+      background-size: 135%;
+      background-repeat: no-repeat;
+      background-position: center 78%;
+      height: 37.5rem;
+    }
+  }
+
+  &__text {
+    text-align: left;
+    min-width: 19.4375rem;
+    line-height: 2.625rem;
+    letter-spacing: -0.36px;
+
+    @include breakpoint-up(medium) {
+      position: absolute;
+      width: 32.125rem;
+      padding-top: 3.875rem;
+      top: 25.625rem;
+      background-color: $veryLightGrey;
+    }
+
+    @include breakpoint-up(large) {
+      position: absolute;
+      width: 27.8125rem;
+      padding-top: 3.875rem;
+      top: 31.625rem;
+      background-color: $veryLightGrey;
+    }
+
+    h1 {
+      font-size: $fontLg;
+      font-weight: map-get($fontWeights, "bold");
+      margin-bottom: 2.5rem;
+
+      @include breakpoint-up(medium) {
+        max-width: 24.25rem;
+      }
+    }
+  }
+}

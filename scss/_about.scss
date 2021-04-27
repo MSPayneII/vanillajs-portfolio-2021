@@ -1,0 +1,74 @@
+.about {
+  margin-bottom: 7rem;
+
+  @include breakpoint-up(medium) {
+    margin-bottom: 6rem;
+  }
+
+  button {
+    margin-bottom: 3.1875rem;
+  }
+  @include breakpoint-up(medium) {
+    display: flex;
+  }
+  &__image {
+    background-image: url("../assets/Michael_HDSHT-2r.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 22rem;
+    background-position: center 26%;
+    margin-bottom: 2rem;
+
+    @include breakpoint-up(medium) {
+      flex: 50%;
+      order: 2;
+      background-size: 144%;
+      background-repeat: no-repeat;
+      height: 22rem;
+      background-position: top;
+      margin-bottom: 2rem;
+      height: 38.5rem;
+    }
+
+    @include breakpoint-up(large) {
+      flex: 50%;
+      order: 2;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      height: 22rem;
+      background-position: center 40%;
+      margin-bottom: 2rem;
+      height: 34.5rem;
+    }
+  }
+
+  &__text {
+    @include breakpoint-up(medium) {
+      flex: 50%;
+      order: 1;
+      padding-right: 4.3125rem;
+    }
+    h2 {
+      font-size: $fontLg;
+      font-weight: map-get($fontWeights, "bold");
+      line-height: 2.625rem;
+      letter-spacing: -0.36px;
+      text-align: left;
+      margin-bottom: 2.8125rem;
+    }
+
+    p {
+      font-size: $bodyText1;
+      line-height: 1.875rem;
+      margin-bottom: 2rem;
+
+      @include breakpoint-up(medium) {
+        width: 21.1875rem;
+      }
+
+      @include breakpoint-up(large) {
+        width: 24.875rem;
+      }
+    }
+  }
+}
