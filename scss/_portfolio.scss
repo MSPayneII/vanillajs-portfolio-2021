@@ -18,6 +18,18 @@
   }
 
   &__header {
+    h1 {
+      font-size: $fontXlg;
+      font-weight: map-get($fontWeights, "bold");
+      line-height: 3.125rem;
+      letter-spacing: -0.45px;
+      margin-bottom: 2.5rem;
+      text-align: left;
+
+      @include breakpoint-up(medium) {
+        max-width: 24.25rem;
+      }
+    }
     h2 {
       font-size: $fontLg;
       font-weight: map-get($fontWeights, "bold");
@@ -111,14 +123,6 @@
       color: $darkBlue;
       font-weight: map-get($fontWeights, "regular");
     }
-    // &__category {
-    //   font-size: $bodyText1;
-    //   font-family: $body;
-    //   letter-spacing: -0.29px;
-    //   line-height: 2rem;
-    //   margin-bottom: 0.2rem;
-    //   color: $cyan;
-    // }
 
     &__description {
       font-size: $bodyText2;

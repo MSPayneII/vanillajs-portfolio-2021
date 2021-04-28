@@ -32,10 +32,6 @@
 .project-details {
   margin-bottom: 2.4375rem;
 
-  //   button {
-  //     margin-bottom: 3.1875rem;
-  //   }
-
   &__text {
     @include breakpoint-up(large) {
       display: grid;
@@ -46,6 +42,18 @@
       @include breakpoint-up(large) {
         width: 43.0625rem;
         grid-column: 1;
+      }
+    }
+
+    h1 {
+      font-size: $fontXlg;
+      font-weight: map-get($fontWeights, "bold");
+      line-height: 3.125rem;
+      letter-spacing: -0.45px;
+      margin-bottom: 2.5rem;
+
+      @include breakpoint-up(medium) {
+        max-width: 24.25rem;
       }
     }
 
@@ -125,6 +133,18 @@
   }
 
   .project-section-header {
+    h2 {
+      font-size: $fontLg;
+      font-weight: map-get($fontWeights, "bold");
+      line-height: 2.625rem;
+      letter-spacing: -0.36px;
+      text-align: left;
+      margin-bottom: 2.8125rem;
+
+      @include breakpoint-up(large) {
+        grid-column: 1;
+      }
+    }
     h3 {
       font-size: $fontMd;
       font-weight: map-get($fontWeights, "regular");
@@ -171,7 +191,7 @@
 
     .glider-prev,
     .glider-next {
-      color: $cyan;
+      color: $darkBlue;
       font-size: 3.75rem;
     }
     .glider-prev {
@@ -221,11 +241,10 @@
   grid-template-columns: 1fr;
   column-gap: 4rem;
   row-gap: 2rem;
-  margin-bottom: 7rem;
+  margin-bottom: 2.8125rem;
 
   @include breakpoint-up(medium) {
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 6rem;
   }
 
   @include breakpoint-up(large) {
@@ -234,8 +253,8 @@
 
   .feature-icons {
     fill: $grayishDarkBlue;
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
   }
 
   .feature-item {
@@ -285,9 +304,14 @@
 .mdos-infographic {
   background-image: url("../assets/mdose-one-pager.png");
   height: 14.25rem;
+  margin-bottom: 2.8125rem;
 
   @include breakpoint-up(medium) {
+    height: 31.25rem;
+  }
+  @include breakpoint-up(large) {
     height: 46.25rem;
+    // margin-bottom: 6rem;
   }
 }
 

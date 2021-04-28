@@ -59,6 +59,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  legend {
+    margin-bottom: 2.5rem;
+  }
   h2 {
     font-size: $fontLg;
     font-weight: map-get($fontWeights, "bold");
@@ -73,7 +77,7 @@
   }
 
   &__input-title {
-    font-size: $form;
+    font-size: $bodyText2;
     font-weight: map-get($fontWeights, "bold");
     color: $grayishDarkBlue;
     line-height: 1.875rem;
@@ -85,7 +89,7 @@
     display: block;
     background-color: $lightGrey;
     color: $grayishDarkBlue;
-    font-size: $form;
+    font-size: $bodyText2;
     width: 19.4375rem;
     height: 3rem;
     padding-left: 1rem;

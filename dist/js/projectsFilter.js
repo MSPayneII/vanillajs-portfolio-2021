@@ -30,7 +30,7 @@ filterBtns.forEach((btn) => {
 const displayProjectItems = (projectItem) => {
   let displayProjects = projectItem.map((project) => {
     // console.log(project);
-    return `<a href=${project.url} target="_blank"class="project">
+    return `<a href=${project.url} class="project">
               <article class="project__container">
                 <div
                   class="project__image"

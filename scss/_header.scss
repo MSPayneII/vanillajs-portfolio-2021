@@ -116,7 +116,15 @@
       }
     }
     .link-active {
-      color: $cyan;
+      color: #fff;
+      background-color: $navLinks;
+      // border: 1px solid $cyan;
+      padding: 1rem;
+      // font-weight: map-get($fontWeights, "bold");
+
+      &:hover {
+        color: $grayishDarkBlue;
+      }
 
       &::before {
         content: "";
@@ -160,9 +168,10 @@
 
       &:hover {
         // border-bottom: 1px solid $cyan;
-        transition: color 300ms ease-in-out;
+        transition: all 150ms ease-in-out;
 
-        color: $cyan;
+        background-color: $cyan;
+        color: $darkBlue;
 
         &:before {
           opacity: 1;

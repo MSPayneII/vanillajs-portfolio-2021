@@ -10,9 +10,9 @@
     background-image: url("../assets/hero-image.png");
     background-size: 151%;
     background-repeat: no-repeat;
-    background-position: center 67%;
-    height: 17rem;
-    margin-bottom: 1.9375rem;
+    background-position: center 77%;
+    height: 13rem;
+    margin-bottom: 2.5rem;
 
     @include breakpoint-up(medium) {
       background-size: 148%;
@@ -31,29 +31,31 @@
 
   &__text {
     text-align: left;
-    min-width: 19.4375rem;
-    line-height: 2.625rem;
-    letter-spacing: -0.36px;
+    // min-width: 19.4375rem;
+    // line-height: 2.625rem;
+    // letter-spacing: -0.36px;
 
     @include breakpoint-up(medium) {
       position: absolute;
-      width: 32.125rem;
-      padding-top: 3.875rem;
-      top: 25.625rem;
+      width: 29.125rem;
+      padding-top: 1.875rem;
+      padding-left: 0.4rem;
+      top: 25.9rem;
       background-color: $veryLightGrey;
     }
 
     @include breakpoint-up(large) {
       position: absolute;
       width: 27.8125rem;
-      padding-top: 3.875rem;
-      top: 31.625rem;
+      top: 31.9rem;
       background-color: $veryLightGrey;
     }
 
     h1 {
-      font-size: $fontLg;
+      font-size: $fontXlg;
       font-weight: map-get($fontWeights, "bold");
+      line-height: 3.125rem;
+      letter-spacing: -0.45px;
       margin-bottom: 2.5rem;
 
       @include breakpoint-up(medium) {
