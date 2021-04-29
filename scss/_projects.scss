@@ -295,7 +295,12 @@
   margin-top: 2.125rem;
 }
 
-.project-image {
+figure {
+  margin-bottom: 2.8125rem;
+}
+
+.project-story-image {
+  margin-bottom: 2.8125rem;
 }
 
 .mdos-hero-image {
@@ -380,5 +385,55 @@
 
   @include breakpoint-up(large) {
     height: 26rem;
+  }
+}
+.umsi-hero-image {
+  background-image: url("../assets/umsithumbnail.png");
+}
+
+.umsi-feature-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 4rem;
+  row-gap: 2rem;
+  margin-bottom: 2.8125rem;
+
+  @include breakpoint-up(large) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .feature-item {
+    &__title {
+      font-size: $fontSm;
+      font-weight: map-get($fontWeights, "bold");
+      line-height: 2.625rem;
+      letter-spacing: -0.29px;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    &__description {
+      font-size: $bodyText2;
+      line-height: 1.875rem;
+      margin-bottom: 2rem;
+
+      @include breakpoint-up(medium) {
+        font-size: $bodyText1;
+      }
+    }
+  }
+}
+
+.umsi-large-image {
+  background-image: url("../assets/affinitywall.jpeg");
+  height: 9.25rem;
+  margin-bottom: 1rem;
+
+  @include breakpoint-up(medium) {
+    height: 21.25rem;
+  }
+  @include breakpoint-up(large) {
+    height: 31.25rem;
+    // margin-bottom: 6rem;
   }
 }

@@ -3,14 +3,6 @@
   z-index: 1;
   margin-bottom: 4.5rem;
 
-  //   @include breakpoint-up(medium) {
-  //     margin-bottom: rem;
-  //   }
-
-  //   @include breakpoint-up(large) {
-  //     // margin-bottom: 4.125rem;
-  //   }
-
   // Hamburger Open Styles
   &.open {
     .header__toggle {
@@ -38,10 +30,10 @@
     // background-image: linear-gradient($cyan, transparent);
   }
 
-  nav {
-    position: relative;
-    background-color: $veryLightGrey;
-  }
+  // nav {
+  //   position: relative;
+  //   background-color: $veryLightGrey;
+  // }
 
   &__logo {
     color: $grayishDarkBlue;
@@ -66,9 +58,12 @@
   &__toggle {
     //mobile menu Toggle
 
+    border: none;
+    background-color: $veryLightGrey;
+
     > span {
       display: block;
-      width: 26px;
+      width: 1.625rem;
       height: 2px;
       background-color: $grayishDarkBlue;
       transition: all 300ms ease-in-out;
@@ -81,61 +76,70 @@
   }
 
   &__links {
-    a {
-      position: relative;
-      color: $grayishDarkBlue;
-      transition: color 300ms ease-in-out;
-      text-transform: uppercase;
-      font-family: $body;
-      font-weight: 400;
-      font-size: $navButtons;
-      letter-spacing: 2px;
+    li {
+      list-style: none;
+      display: inline-block;
 
       &:not(:last-child) {
         margin-right: 2.8125rem;
       }
 
-      &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 1px;
-        left: 0;
-        right: 0;
-        bottom: -20px;
-        background: $cyan;
-        opacity: 0;
-        transition: opacity 300ms ease-in-out;
-      }
-      &:hover {
-        color: $cyan;
+      a {
+        position: relative;
+        color: $grayishDarkBlue;
+        transition: color 300ms ease-in-out;
+        text-transform: uppercase;
+        font-family: $body;
+        font-weight: 400;
+        font-size: $navButtons;
+        letter-spacing: 2px;
+
+        // &:not(:last-child) {
+        //   margin-right: 2.8125rem;
+        // }
 
         &::before {
-          opacity: 1;
+          content: "";
+          display: block;
+          position: absolute;
+          height: 1px;
+          left: 0;
+          right: 0;
+          bottom: -20px;
+          background: $cyan;
+          opacity: 0;
+          transition: opacity 300ms ease-in-out;
+        }
+        &:hover {
+          color: $cyan;
+
+          &::before {
+            opacity: 1;
+          }
         }
       }
-    }
-    .link-active {
-      color: #fff;
-      background-color: $navLinks;
-      // border: 1px solid $cyan;
-      padding: 1rem;
-      // font-weight: map-get($fontWeights, "bold");
+      .link-active {
+        color: #fff;
+        background-color: $navLinks;
+        // border: 1px solid $cyan;
+        padding: 1rem;
+        // font-weight: map-get($fontWeights, "bold");
 
-      &:hover {
-        color: $grayishDarkBlue;
-      }
+        &:hover {
+          color: $grayishDarkBlue;
+        }
 
-      &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 1px;
-        left: 0;
-        right: 0;
-        bottom: -20px;
-        background: $cyan;
-        opacity: 1;
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          height: 1px;
+          left: 0;
+          right: 0;
+          bottom: -20px;
+          background: $cyan;
+          opacity: 1;
+        }
       }
     }
   }
@@ -155,26 +159,27 @@
     font-weight: 400;
     letter-spacing: 2px;
 
-    a {
-      display: block;
-      // padding: 0.625rem;
-      color: $veryLightGrey;
-      text-align: center;
-      transition: color 300ms ease-in-out;
-
+    li {
       &:not(:last-child) {
         margin-bottom: 2.3125rem;
       }
+      a {
+        display: block;
+        // padding: 0.625rem;
+        color: $veryLightGrey;
+        text-align: center;
+        transition: color 300ms ease-in-out;
 
-      &:hover {
-        // border-bottom: 1px solid $cyan;
-        transition: all 150ms ease-in-out;
+        &:hover {
+          // border-bottom: 1px solid $cyan;
+          transition: all 150ms ease-in-out;
 
-        background-color: $cyan;
-        color: $darkBlue;
+          background-color: $cyan;
+          color: $darkBlue;
 
-        &:before {
-          opacity: 1;
+          &:before {
+            opacity: 1;
+          }
         }
       }
     }

@@ -340,11 +340,6 @@ body {
   left: 0px;
 }
 
-.header nav {
-  position: relative;
-  background-color: #fafafa;
-}
-
 .header__logo {
   color: #33323d;
   transition: fill 150ms ease-in-out;
@@ -366,9 +361,14 @@ body {
   letter-spacing: 2px;
 }
 
+.header__toggle {
+  border: none;
+  background-color: #fafafa;
+}
+
 .header__toggle > span {
   display: block;
-  width: 26px;
+  width: 1.625rem;
   height: 2px;
   background-color: #33323d;
   transition: all 300ms ease-in-out;
@@ -379,7 +379,16 @@ body {
   margin-bottom: 5px;
 }
 
-.header__links a {
+.header__links li {
+  list-style: none;
+  display: inline-block;
+}
+
+.header__links li:not(:last-child) {
+  margin-right: 2.8125rem;
+}
+
+.header__links li a {
   position: relative;
   color: #33323d;
   transition: color 300ms ease-in-out;
@@ -390,11 +399,7 @@ body {
   letter-spacing: 2px;
 }
 
-.header__links a:not(:last-child) {
-  margin-right: 2.8125rem;
-}
-
-.header__links a::before {
+.header__links li a::before {
   content: "";
   display: block;
   position: absolute;
@@ -407,25 +412,25 @@ body {
   transition: opacity 300ms ease-in-out;
 }
 
-.header__links a:hover {
+.header__links li a:hover {
   color: #5fb4a2;
 }
 
-.header__links a:hover::before {
+.header__links li a:hover::before {
   opacity: 1;
 }
 
-.header__links .link-active {
+.header__links li .link-active {
   color: #fff;
   background-color: rgba(95, 180, 162, 0.9);
   padding: 1rem;
 }
 
-.header__links .link-active:hover {
+.header__links li .link-active:hover {
   color: #33323d;
 }
 
-.header__links .link-active::before {
+.header__links li .link-active::before {
   content: "";
   display: block;
   position: absolute;
@@ -453,24 +458,24 @@ body {
   letter-spacing: 2px;
 }
 
-.header__menu a {
+.header__menu li:not(:last-child) {
+  margin-bottom: 2.3125rem;
+}
+
+.header__menu li a {
   display: block;
   color: #fafafa;
   text-align: center;
   transition: color 300ms ease-in-out;
 }
 
-.header__menu a:not(:last-child) {
-  margin-bottom: 2.3125rem;
-}
-
-.header__menu a:hover {
+.header__menu li a:hover {
   transition: all 150ms ease-in-out;
   background-color: #5fb4a2;
   color: #203a4c;
 }
 
-.header__menu a:hover:before {
+.header__menu li a:hover:before {
   opacity: 1;
 }
 
@@ -635,7 +640,7 @@ body {
     transition: all 300ms ease-in-out;
     width: 21rem;
   }
-  .portfolio .project__container:hover {
+  .portfolio .project__container:hover, .portfolio .project__container:focus {
     transform: scale(1.05);
   }
 }
@@ -668,7 +673,7 @@ body {
 }
 
 .portfolio .project__title {
-  font-size: 1.375rem;
+  font-size: 1.625rem;
   line-height: 2.625rem;
   letter-spacing: -0.36px;
   color: #33323d;
@@ -1218,7 +1223,7 @@ body {
     transition: all 300ms ease-in-out;
     width: 21rem;
   }
-  .portfolio .project__container:hover {
+  .portfolio .project__container:hover, .portfolio .project__container:focus {
     transform: scale(1.05);
   }
 }
@@ -1251,7 +1256,7 @@ body {
 }
 
 .portfolio .project__title {
-  font-size: 1.375rem;
+  font-size: 1.625rem;
   line-height: 2.625rem;
   letter-spacing: -0.36px;
   color: #33323d;
@@ -1579,7 +1584,7 @@ body {
 }
 
 .feature-grid .feature-item__title {
-  font-size: 1.375rem;
+  font-size: 1.625rem;
   font-weight: 700;
   line-height: 2.625rem;
   letter-spacing: -0.29px;
@@ -1611,6 +1616,14 @@ body {
 
 .website-btn {
   margin-top: 2.125rem;
+}
+
+figure {
+  margin-bottom: 2.8125rem;
+}
+
+.project-story-image {
+  margin-bottom: 2.8125rem;
 }
 
 .mdos-hero-image {
@@ -1720,6 +1733,63 @@ body {
 @media (min-width: 64em) {
   .journeys-hero-image {
     height: 26rem;
+  }
+}
+
+.umsi-hero-image {
+  background-image: url("../assets/umsithumbnail.png");
+}
+
+.umsi-feature-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 4rem;
+  row-gap: 2rem;
+  margin-bottom: 2.8125rem;
+}
+
+@media (min-width: 64em) {
+  .umsi-feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.umsi-feature-grid .feature-item__title {
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 2.625rem;
+  letter-spacing: -0.29px;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.umsi-feature-grid .feature-item__description {
+  font-size: 0.9375rem;
+  line-height: 1.875rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 40em) {
+  .umsi-feature-grid .feature-item__description {
+    font-size: 1rem;
+  }
+}
+
+.umsi-large-image {
+  background-image: url("../assets/affinitywall.jpeg");
+  height: 9.25rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 40em) {
+  .umsi-large-image {
+    height: 21.25rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .umsi-large-image {
+    height: 31.25rem;
   }
 }
 

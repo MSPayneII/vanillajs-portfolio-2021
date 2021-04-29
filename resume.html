@@ -20,30 +20,35 @@
         <div class="overlay has-fade"></div>
 
         <nav class="flex flex-jc-sb flex-ai-c">
-          <a href="/" class="header__logo">
+          <section href="/index.html" class="header__logo">
             <h3 class="logo1">Michael S Payne II</h3>
             <h4 class="logo2">UX Researcher & Web Developer</h4>
-          </a>
+          </section>
 
-          <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+          <!-- originally an a tag -->
+          <button
+            id="btnHamburger"
+            class="header__toggle hide-for-desktop"
+            aria-label="open and close menu modal"
+          >
             <span></span>
             <span></span>
             <span></span>
-          </a>
+          </button>
 
-          <div class="header__links hide-for-mobile">
-            <a href="/index.html">Home</a>
-            <a href="/portofolio.html">Portfolio</a>
-            <a href="/resume.html" class="link-active">Resume</a>
-            <a href="/contact.html">Contact Me</a>
-          </div>
+          <ul class="header__links hide-for-mobile">
+            <li><a href="/index.html" >Home</a></li>
+            <li><a href="/portofolio.html">Portfolio</a></li>
+            <li><a href="/resume.html" class="link-active">My Resume</a></li>
+            <li><a href="/contact.html">Contact Me</a></li>
+          </ul>
         </nav>
-        <div class="header__menu has-fade">
-          <a href="/index.html">Home</a>
-          <a href="/portofolio.html">Portfolio</a>
-          <a href="/resume.html">Resume</a>
-          <a href="/contact.html">Contact Me</a>
-        </div>
+        <ul class="header__menu has-fade">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/portofolio.html">Portfolio</a></li>
+          <li><a href="/resume.html">My Resume</a></li>
+          <li><a href="/contact.html">Contact Me</a></li>
+        </ul>
       </header>
       <main>
 

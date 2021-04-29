@@ -31,7 +31,7 @@ const displayProjectItems = (projectItem) => {
   let displayProjects = projectItem.map((project) => {
     // console.log(project);
     return `<a href=${project.url} class="project">
-              <article class="project__container">
+              <article class="project__container" tabindex="0">
                 <div
                   class="project__image"
                   style="
