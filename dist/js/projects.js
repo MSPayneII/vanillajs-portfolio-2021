@@ -41,7 +41,7 @@ const projects = [
     category: "App Dev",
     client: "Personal Project",
     img: "./dist/assets/umsithumbnail.png",
-    url: "/umsiproject.html",
+    url: "/",
     desc:
       "A Mid-Fi prototype targeting mental health awareness amongst black UM students (my first prototype)",
   },
