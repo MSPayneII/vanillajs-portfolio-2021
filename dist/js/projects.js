@@ -36,15 +36,15 @@ const projects = [
       "A customer assessment on current and potential customers to provide recommendations for attracting a new audience",
   },
 
-  // {
-  //   title: "Portfolio Engagement",
-  //   category: "Research & Design",
-  //   client: "UM School of Information",
-  //   img: "./dist/assets/umsithumbnail.png",
-  //   url: "/umsiproject.html",
-  //   desc:
-  //     "The project focused on gathering user feedback on a digital portfolio system and providing recommendations for its replacement based on data analysis.",
-  // },
+  {
+    title: "Mental Health Prototype",
+    category: "App Dev",
+    client: "Personal Project",
+    img: "./dist/assets/umsithumbnail.png",
+    url: "/umsiproject.html",
+    desc:
+      "A Mid-Fi prototype targeting mental health awareness amongst black UM students (my first prototype)",
+  },
   {
     title: "Website Comparison",
     category: "Research & Design",

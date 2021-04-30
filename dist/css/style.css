@@ -87,6 +87,10 @@ hr {
   box-sizing: inherit;
 }
 
+*:focus {
+  border: 1px dotted #5fb4a2;
+}
+
 ul {
   list-style-type: none;
 }
