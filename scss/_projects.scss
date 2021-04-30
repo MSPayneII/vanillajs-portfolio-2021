@@ -1,12 +1,30 @@
-.project-hero {
-  margin-bottom: 7rem;
-  @include breakpoint-up(medium) {
-    margin-bottom: 6rem;
+.redirect-link {
+  text-decoration: underline;
+  color: $redirectLink;
+}
+
+.section-flex {
+  @include breakpoint-up(large) {
+    display: flex;
+    gap: 3rem;
+    flex-direction: row;
   }
+
+  &-column1,
+  &-column2 {
+    // margin-bottom: 3rem;
+
+    @include breakpoint-up(large) {
+      flex: 50%;
+    }
+  }
+}
+
+.project-hero {
+  margin-bottom: 3rem;
 
   &__image {
     position: relative;
-    // background-image: url("");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -14,16 +32,10 @@
     margin-bottom: 1.9375rem;
 
     @include breakpoint-up(medium) {
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
       height: 23.375rem;
     }
 
     @include breakpoint-up(large) {
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
       height: 34.25rem;
     }
   }
@@ -33,18 +45,6 @@
   margin-bottom: 2.4375rem;
 
   &__text {
-    @include breakpoint-up(large) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    hr {
-      @include breakpoint-up(large) {
-        width: 43.0625rem;
-        grid-column: 1;
-      }
-    }
-
     h1 {
       font-size: $fontXlg;
       font-weight: map-get($fontWeights, "bold");
@@ -57,68 +57,55 @@
       }
     }
 
-    h2 {
-      font-size: $fontLg;
-      font-weight: map-get($fontWeights, "bold");
-      line-height: 2.625rem;
-      letter-spacing: -0.36px;
-      text-align: left;
-      margin-bottom: 2.8125rem;
+    // p {
+    //   font-size: $bodyText2;
+    //   line-height: 1.875rem;
+    //   // margin-bottom: 2rem;
+    //   width: 19.4375rem;
 
-      @include breakpoint-up(large) {
-        grid-column: 1;
-      }
-    }
-
-    p {
-      font-size: $bodyText2;
-      line-height: 1.875rem;
-      margin-bottom: 2rem;
-      width: 19.4375rem;
-
-      @include breakpoint-up(medium) {
-        width: 43.0625rem;
-      }
-      @include breakpoint-up(large) {
-        font-size: $bodyText1;
-        width: 39.6875rem;
-        grid-column: 2;
-      }
-    }
+    //   @include breakpoint-up(medium) {
+    //     width: 43.0625rem;
+    //   }
+    //   @include breakpoint-up(large) {
+    //     font-size: $bodyText1;
+    //     width: 39.6875rem;
+    //     grid-column: 2;
+    //   }
+    // }
 
     .statistics {
-      grid-column: 1;
-      margin-bottom: 2.8125rem;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      // grid-column: 1;
+      // margin-bottom: 2.8125rem;
 
-      @include breakpoint-up(large) {
-        width: 20rem;
+      @include breakpoint-up(medium) {
+        grid-template-columns: repeat(2, 1fr);
+        // width: 20rem;
       }
 
-      p {
-        display: inline;
+      &__section-div {
+        margin-bottom: 2rem;
+      }
+
+      &__section1 {
+        @include breakpoint-up(medium) {
+          grid-column: 1;
+        }
+      }
+      &__section2 {
+        @include breakpoint-up(medium) {
+          grid-column: 2;
+        }
+      }
+
+      &__stat {
+        font-weight: map-get($fontWeights, "regular");
         font-size: $bodyText2;
-        font-weight: map-get($fontWeights, "bold");
-        color: $grayishDarkBlue;
         line-height: 1.875rem;
 
         @include breakpoint-up(medium) {
           font-size: $bodyText1;
-        }
-      }
-
-      .statistics__stat {
-        color: $darkBlue;
-        font-weight: map-get($fontWeights, "regular");
-        font-size: $bodyText2;
-
-        @include breakpoint-up(medium) {
-          font-size: $bodyText1;
-        }
-      }
-
-      &__section {
-        &:not(:last-child) {
-          margin-bottom: 0.5rem;
         }
       }
     }
@@ -132,14 +119,16 @@
     margin-bottom: 6rem;
   }
 
-  .project-section-header {
-    h2 {
+  .project-section {
+    margin-bottom: 3rem;
+
+    &__title {
       font-size: $fontLg;
       font-weight: map-get($fontWeights, "bold");
       line-height: 2.625rem;
       letter-spacing: -0.36px;
       text-align: left;
-      margin-bottom: 2.8125rem;
+      margin-bottom: 2.5rem;
 
       @include breakpoint-up(large) {
         grid-column: 1;
@@ -153,10 +142,10 @@
       text-align: left;
       margin-bottom: 2.5rem;
     }
-    .project-section-text {
+    &__text {
       font-size: $bodyText2;
       line-height: 1.875rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
 
       @include breakpoint-up(medium) {
         font-size: $bodyText1;
@@ -182,55 +171,6 @@
 
       &:last-child {
         margin-bottom: 1.875rem;
-      }
-    }
-    .glider-contain {
-      width: 90%;
-      margin-bottom: 2.5rem;
-    }
-
-    .glider-prev,
-    .glider-next {
-      color: $darkBlue;
-      font-size: 3.75rem;
-    }
-    .glider-prev {
-      left: -2.5rem;
-
-      &.disabled {
-        color: $grayishDarkBlue;
-        opacity: 0.35rem;
-      }
-    }
-    .glider-next {
-      right: -2.5rem;
-
-      &.disabled {
-        color: $grayishDarkBlue;
-        opacity: 0.35rem;
-      }
-    }
-
-    .glider-dots {
-      padding: 1rem;
-    }
-
-    .glider-dot {
-      background-color: $grayishDarkBlue;
-      height: 1rem;
-      width: 1rem;
-
-      @include breakpoint-up(large) {
-        height: 1.2rem;
-        width: 1.2rem;
-      }
-
-      &.active {
-        background-color: $cyan;
-      }
-
-      &:hover {
-        background-color: $cyan;
       }
     }
   }
@@ -283,7 +223,7 @@
   }
 }
 
-.last-section {
+.end-of-project {
   margin-bottom: 7rem;
 
   @include breakpoint-up(medium) {
@@ -295,12 +235,18 @@
   margin-top: 2.125rem;
 }
 
-figure {
-  margin-bottom: 2.8125rem;
-}
+.project-figure {
+  // margin-bottom: 3rem;
 
-.project-story-image {
-  margin-bottom: 2.8125rem;
+  &__image {
+    margin-bottom: 0.2rem;
+    width: 100%;
+    height: auto;
+  }
+
+  &__caption {
+    font-size: $form;
+  }
 }
 
 .mdos-hero-image {

@@ -1,9 +1,9 @@
 .about {
-  margin-bottom: 7rem;
+  margin-bottom: 3rem;
 
-  @include breakpoint-up(medium) {
-    margin-bottom: 6rem;
-  }
+  // @include breakpoint-up(medium) {
+  //   margin-bottom: 6rem;
+  // }
 
   button {
     margin-bottom: 3.1875rem;
@@ -17,7 +17,7 @@
     background-repeat: no-repeat;
     height: 22rem;
     background-position: center 26%;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     @include breakpoint-up(medium) {
       flex: 50%;
@@ -48,7 +48,7 @@
       order: 1;
       padding-right: 4.3125rem;
     }
-    h2 {
+    .about__title {
       font-size: $fontLg;
       font-weight: map-get($fontWeights, "bold");
       line-height: 2.625rem;
@@ -57,7 +57,7 @@
       margin-bottom: 2.8125rem;
     }
 
-    p {
+    .about__description {
       font-size: $bodyText1;
       line-height: 1.875rem;
       margin-bottom: 2rem;

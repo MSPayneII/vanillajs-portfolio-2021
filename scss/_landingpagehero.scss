@@ -1,8 +1,12 @@
 .hero {
   margin-bottom: 6rem;
 
+  // @include breakpoint-up(large) {
+  //   margin-bottom: 7rem;
+  // }
+
   @include breakpoint-up(large) {
-    margin-bottom: 9.375rem;
+    margin-bottom: 8.375rem;
   }
 
   &__image {
@@ -12,7 +16,7 @@
     background-repeat: no-repeat;
     background-position: center 77%;
     height: 13rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
 
     @include breakpoint-up(medium) {
       background-size: 148%;

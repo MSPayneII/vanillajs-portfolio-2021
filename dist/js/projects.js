@@ -1,12 +1,12 @@
 const projects = [
   {
-    title: "AB Status System",
+    title: "AV Status System",
     category: "Research & Design",
     client: "Michigan Department of State",
     img: "./dist/assets/mdosthumb.png",
     url: "/mdosproject.html",
     desc:
-      "Established an automated email confirmation system for absentee ballot status updates in four Michigan cities & townships.",
+      "Established an automated email confirmation system for absentee ballot status updates in four Michigan cities & townships",
   },
   {
     title: "Food Route Design",
@@ -15,7 +15,7 @@ const projects = [
     img: "./dist/assets/foodroutethumbnail.png",
     url: "/foodroutedesignproject.html",
     desc:
-      "A prototype intuitive community-based platform for individuals to give and receive assistance to one another in the era of COVID-19.",
+      "A prototype community-based platform for individuals to receive and give assistance to one another",
   },
   {
     title: "Digital Office Space",
@@ -24,7 +24,7 @@ const projects = [
     img: "./dist/assets/Chadseythumbnail.png",
     url: "/digitalofficeproject.html",
     desc:
-      "Created a digital office space for a Detroit-based nonprofit organization to maintain communication with its residents and distribute resources to their community.",
+      "A digital office space for a Detroit-based nonprofit organization to maintain communication with its residents and distribute resources to it's community",
   },
   {
     title: "Audience Expansion",
@@ -33,17 +33,26 @@ const projects = [
     img: "./dist/assets/Journeysthumbnail.png",
     url: "/journeysproject.html",
     desc:
-      "Customer assessment on current and potential customers to provide recommendations for attracting a new audience.",
+      "A customer assessment on current and potential customers to provide recommendations for attracting a new audience",
   },
 
+  // {
+  //   title: "Portfolio Engagement",
+  //   category: "Research & Design",
+  //   client: "UM School of Information",
+  //   img: "./dist/assets/umsithumbnail.png",
+  //   url: "/umsiproject.html",
+  //   desc:
+  //     "The project focused on gathering user feedback on a digital portfolio system and providing recommendations for its replacement based on data analysis.",
+  // },
   {
-    title: "Portfolio Engagement",
+    title: "Website Comparison",
     category: "Research & Design",
-    client: "UM School of Information",
-    img: "./dist/assets/umsithumbnail.png",
-    url: "/umsiproject.html",
+    client: "Tobii",
+    img: "./dist/assets/eyetrackerthumb.png",
+    url: "/eyetracking.html",
     desc:
-      "The project focused on gathering user feedback on a digital portfolio system and providing recommendations for its replacement based on data analysis.",
+      "A comparison on how navigable various Behavioral Lab websites were using eyetracking technology",
   },
 
   {
@@ -53,7 +62,7 @@ const projects = [
     img: "./dist/assets/alathumbnail.png",
     url: "/bannedbooksproject.html",
     desc:
-      "The project goal was to provide an updated analysis on the usability accessibility of the Banned & Challenged Books website.",
+      "An updated usability assesement analysis of the Banned & Challenged Books website",
   },
   {
     title: "Software Evaluation",
@@ -62,7 +71,7 @@ const projects = [
     img: "./dist/assets/mtathumbnail.png",
     url: "/mtaproject.html",
     desc:
-      "The project goal was to provide a software assessment of virtual meeting platforms MTA membership use to host OMA-compliant meetings during the pandemic.",
+      "A software assessment of virtual meeting platforms MTA membership use to host OMA-compliant meetings during the pandemic",
   },
 
   {
@@ -72,7 +81,7 @@ const projects = [
     img: "./dist/assets/socialmediadash.png",
     url: "/socialdashproject.html",
     desc:
-      "This project required me to build a fully responsive social media dashboard landing page with a color theme switcher.",
+      "A fully responsive social media dashboard landing page with a color theme switcher",
   },
   {
     title: "EasyBank Page",
@@ -81,7 +90,7 @@ const projects = [
     img: "./dist/assets/easybank.png",
     url: "/easybankproject.html",
     desc:
-      "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid, Flexbox, SCSS, and JavaScript for the menu.",
+      "A fully responsive landing page to the designs provided using HTML5, along with CSS Grid, Flexbox, SCSS, and JavaScript",
   },
   {
     title: "Github Jobs Board",
@@ -90,7 +99,7 @@ const projects = [
     img: "./dist/assets/githubjobsapi.png",
     url: "/githubjobsproject.html",
     desc:
-      "I built an almost fully functional jobs board using the GitHub Jobs API and React Js. This project was my first time using React!",
+      "An almost fully functional jobs board using the GitHub Jobs API and React Js. This was my first project using React!",
   },
   {
     title: "Price Component",
@@ -99,7 +108,7 @@ const projects = [
     img: "./dist/assets/interactcomponent.png",
     url: "/pricecomponent.html",
     desc:
-      "I built an interactive pricing component complete with a custom range input slider and pricing toggle in this project.",
+      "An interactive pricing component complete with a custom range input slider and pricing toggle in this project",
   },
   {
     title: "Card Components",
@@ -116,8 +125,7 @@ const projects = [
     client: "Personal Project",
     img: "./dist/assets/signupcomponent.png",
     url: "/signupcompproject.html",
-    desc:
-      "For this project, I built a sign-up form complete with client-side validation.",
+    desc: "A responsive sign-up form complete with client-side validation",
   },
   {
     title: "Food Route Prototype",
@@ -126,7 +134,7 @@ const projects = [
     img: "./dist/assets/foodroutedev.png",
     url: "/foodrouteprototypeproject.html",
     desc:
-      "This project was my first attempt at building a community-based platform for individuals to give and receive assistance to one another in the era of COVID-19.",
+      "My first attempt at building a community-based platform for individuals to give and receive assistance to one another in the era of COVID-19",
   },
   // {
   //   title: "I-School Rankings",
@@ -144,6 +152,6 @@ const projects = [
     img: "./dist/assets/listmaker3000.png",
     url: "/listmakerproject.html",
     desc:
-      "I built an app that allows users to create, update, and delete checklists and the items contained in those checklists using '2-level' CRUD and Firebase.",
+      "An app that allows users to create, update, and delete checklists and the items contained in those checklists using '2-level' CRUD and Firebase",
   },
 ];

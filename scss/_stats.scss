@@ -1,0 +1,84 @@
+.stats-group {
+  margin-bottom: 7rem;
+
+  @include breakpoint-up(medium) {
+    margin-bottom: 6rem;
+  }
+
+  &__title {
+    font-size: $fontLg;
+    font-weight: map-get($fontWeights, "bold");
+    line-height: 2.625rem;
+    letter-spacing: -0.36px;
+    text-align: left;
+    margin-bottom: 2.8125rem;
+  }
+
+  //   &__description {
+  //     font-size: $bodyText1;
+  //     line-height: 1.875rem;
+  //     margin-bottom: 3.8125rem;
+
+  //     @include breakpoint-up(medium) {
+  //       width: 22.188rem;
+  //     }
+
+  //     @include breakpoint-up(large) {
+  //       width: 24.875rem;
+  //     }
+  //   }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .stat {
+    text-align: center;
+
+    hr {
+      width: 6rem;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include breakpoint-up(medium) {
+        display: none;
+      }
+      @include breakpoint-up(large) {
+        display: none;
+      }
+    }
+
+    &:not(:last-child) {
+      @include breakpoint-up(medium) {
+        margin-right: 7rem;
+      }
+    }
+
+    &__number {
+      font-family: $headers;
+      font-size: 3.75rem;
+      font-weight: map-get($fontWeights, "bold");
+      letter-spacing: 3px;
+    }
+
+    &__description {
+      font-size: $bodyText1;
+      line-height: 1.875rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__text {
+    @include breakpoint-up(medium) {
+      flex: 50%;
+      order: 1;
+      padding-right: 4.3125rem;
+    }
+  }
+}
