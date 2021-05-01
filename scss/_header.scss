@@ -53,6 +53,12 @@
       font-weight: map-get($fontWeights, "regular");
       letter-spacing: 2px;
     }
+
+    .logo1 {
+      @include breakpoint-up(medium) {
+        font-size: 1.525rem;
+      }
+    }
   }
 
   &__toggle {

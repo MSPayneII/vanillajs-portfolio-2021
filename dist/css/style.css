@@ -361,6 +361,12 @@ body {
   letter-spacing: 2px;
 }
 
+@media (min-width: 40em) {
+  .header__logo .logo1 {
+    font-size: 1.525rem;
+  }
+}
+
 .header__toggle {
   border: none;
   background-color: #fafafa;
@@ -527,7 +533,7 @@ body {
     width: 29.125rem;
     padding-top: 1.875rem;
     padding-left: 0.4rem;
-    top: 25.9rem;
+    top: 26.9rem;
     background-color: #fafafa;
   }
 }
@@ -536,7 +542,7 @@ body {
   .hero__text {
     position: absolute;
     width: 27.8125rem;
-    top: 31.9rem;
+    top: 32.9rem;
     background-color: #fafafa;
   }
 }
@@ -1296,6 +1302,38 @@ body {
   }
 }
 
+.project-figure:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.project-figure__image {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: auto;
+}
+
+.project-figure__caption {
+  font-size: 0.8125rem;
+}
+
+@media (min-width: 40em) {
+  .project-figure__reduce {
+    width: 70%;
+  }
+}
+
+.figure-group {
+  display: flex;
+  flex-direction: column;
+  column-gap: 3rem;
+}
+
+@media (min-width: 40em) {
+  .figure-group {
+    flex-direction: row;
+  }
+}
+
 .project-hero {
   margin-bottom: 3rem;
 }
@@ -1335,7 +1373,7 @@ body {
 
 @media (min-width: 40em) {
   .project-details__text h1 {
-    max-width: 24.25rem;
+    max-width: 27.25rem;
   }
 }
 
@@ -1409,7 +1447,7 @@ body {
 
 .project-story .project-section h3 {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 2.625rem;
   letter-spacing: -0.29px;
   text-align: left;
@@ -1515,16 +1553,6 @@ body {
 
 .website-btn {
   margin-top: 2.125rem;
-}
-
-.project-figure__image {
-  margin-bottom: 0.2rem;
-  width: 100%;
-  height: auto;
-}
-
-.project-figure__caption {
-  font-size: 0.8125rem;
 }
 
 .mdos-hero-image {
@@ -1694,6 +1722,10 @@ body {
   }
 }
 
+.eyetracking-hero-image {
+  background-image: url("../assets/eyetrackerthumb.png");
+}
+
 .resume {
   margin-bottom: 2.4375rem;
 }
@@ -1832,57 +1864,57 @@ body {
   }
 }
 
-.glider-contain {
+.project-section .glider-contain {
   width: 90%;
   margin-bottom: 2.5rem;
 }
 
-.glider-contain .glider-prev,
-.glider-contain .glider-next {
+.project-section .glider-contain .glider-prev,
+.project-section .glider-contain .glider-next {
   color: #203a4c;
   font-size: 3.75rem;
 }
 
-.glider-contain .glider-prev {
+.project-section .glider-contain .glider-prev {
   left: -2.5rem;
 }
 
-.glider-contain .glider-prev.disabled {
+.project-section .glider-contain .glider-prev.disabled {
   color: #33323d;
   opacity: 0.35rem;
 }
 
-.glider-contain .glider-next {
+.project-section .glider-contain .glider-next {
   right: -2.5rem;
 }
 
-.glider-contain .glider-next.disabled {
+.project-section .glider-contain .glider-next.disabled {
   color: #33323d;
   opacity: 0.35rem;
 }
 
-.glider-contain .glider-dots {
+.project-section .glider-contain .glider-dots {
   padding: 1rem;
 }
 
-.glider-contain .glider-dot {
+.project-section .glider-contain .glider-dot {
   background-color: #33323d;
   height: 1rem;
   width: 1rem;
 }
 
 @media (min-width: 64em) {
-  .glider-contain .glider-dot {
+  .project-section .glider-contain .glider-dot {
     height: 1.2rem;
     width: 1.2rem;
   }
 }
 
-.glider-contain .glider-dot.active {
+.project-section .glider-contain .glider-dot.active {
   background-color: #5fb4a2;
 }
 
-.glider-contain .glider-dot:hover {
+.project-section .glider-contain .glider-dot:hover {
   background-color: #5fb4a2;
 }
 /*# sourceMappingURL=style.css.map */

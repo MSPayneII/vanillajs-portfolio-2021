@@ -12,11 +12,41 @@
 
   &-column1,
   &-column2 {
-    // margin-bottom: 3rem;
-
     @include breakpoint-up(large) {
       flex: 50%;
     }
+  }
+}
+
+.project-figure {
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  &__image {
+    margin-bottom: 0.2rem;
+    width: 100%;
+    height: auto;
+  }
+
+  &__caption {
+    font-size: $form;
+  }
+
+  &__reduce {
+    @include breakpoint-up(medium) {
+      width: 70%;
+    }
+  }
+}
+
+.figure-group {
+  display: flex;
+  flex-direction: column;
+  column-gap: 3rem;
+
+  @include breakpoint-up(medium) {
+    flex-direction: row;
   }
 }
 
@@ -53,7 +83,7 @@
       margin-bottom: 2.5rem;
 
       @include breakpoint-up(medium) {
-        max-width: 24.25rem;
+        max-width: 27.25rem;
       }
     }
 
@@ -136,7 +166,7 @@
     }
     h3 {
       font-size: $fontMd;
-      font-weight: map-get($fontWeights, "regular");
+      font-weight: map-get($fontWeights, "bold");
       line-height: 2.625rem;
       letter-spacing: -0.29px;
       text-align: left;
@@ -233,20 +263,6 @@
 
 .website-btn {
   margin-top: 2.125rem;
-}
-
-.project-figure {
-  // margin-bottom: 3rem;
-
-  &__image {
-    margin-bottom: 0.2rem;
-    width: 100%;
-    height: auto;
-  }
-
-  &__caption {
-    font-size: $form;
-  }
 }
 
 .mdos-hero-image {
@@ -382,4 +398,8 @@
     height: 31.25rem;
     // margin-bottom: 6rem;
   }
+}
+
+.eyetracking-hero-image {
+  background-image: url("../assets/eyetrackerthumb.png");
 }

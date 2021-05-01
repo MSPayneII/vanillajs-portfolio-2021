@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+
+    <title>Michael S. Payne II Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="overlay has-fade"></div>
+
+        <section class="flex flex-jc-sb flex-ai-c">
+          <div href="/index.html" class="header__logo">
+            <h3 class="logo1">Michael S Payne II</h3>
+            <h4 class="logo2">UX Researcher | Web Developer</h4>
+          </div>
+
+          <!-- originally an a tag -->
+          <button
+            id="btnHamburger"
+            class="header__toggle hide-for-desktop"
+            aria-label="open and close menu modal"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="header__links hide-for-mobile">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li>
+                <a href="/portofolio.html" class="link-active">Portfolio</a>
+              </li>
+              <li><a href="/resume.html">My Resume</a></li>
+              <li><a href="/contact.html">Contact Me</a></li>
+            </ul>
+          </nav>
+        </section>
+        <nav class="header__menu has-fade">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/portofolio.html">Portfolio</a></li>
+            <li><a href="/resume.html">My Resume</a></li>
+            <li><a href="/contact.html">Contact Me</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="project-hero">
+          <div class="project-hero__image eyetracking-hero-image"></div>
+        </section>
+
+        <section class="project-details">
+          <hr />
+          <div class="project-details__text">
+            <h1>Website Comparison</h1>
+
+            <section class="statistics">
+              <article class="statistics__section1">
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Client</strong><br />Tobii
+                  </p>
+                </div>
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Time</strong><br />
+                    2 weeks (Dec 2018)
+                  </p>
+                </div>
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Role</strong><br />
+                    UX Researcher
+                  </p>
+                </div>
+              </article>
+
+              <article class="statistics__section2">
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Category</strong><br />Research & Design
+                  </p>
+                </div>
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Team Size</strong><br />
+                    2
+                  </p>
+                </div>
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Skills</strong><br />
+                    Eye-tracking, Protocol Creation, Participant Recruitment,
+                    Survey Design, Usability Test, Data Analysis,
+                  </p>
+                </div>
+              </article>
+            </section>
+          </div>
+          <hr />
+        </section>
+
+        <section class="project-story">
+          <section class="project-section section-flex">
+            <div class="project-section__content section-flex-column1">
+              <h2 class="project-section__title">TL;DR</h2>
+
+              <p class="project-section__text">
+                  Our team piloted a two-week eye-tracking certification course hosted by Tobii. We created and administered a study to gauge the navigability of the Ross School of Business Behavioral Lab website. Then compared it to the business school websites of Columbia Business School and Stanford Graduate School of Business. 
+                </p>
+              <p class="project-section__text">
+                  Research data determined the Ross School of Business website was the most difficult to navigate of all three websites. Also, the Ross School of Business website took the longest time to navigate, with most participants reporting moderate confusion. Recommendation: The Ross School of Business should collaborate with its web developers to make its website more user-friendly and reduce user frustration.
+              </p>
+            </div>
+
+            <figure class="project-figure section-flex-column2">
+              <img
+                src="./dist/assets/eyetracking/businessschoolwebsite.jpeg"
+                alt="screenshot of research participant's eye movements with fixation
+                points and duration countst"
+                class="project-figure__image"
+              />
+              <figcaption class="project-figure__caption">
+                Image of a research participant's eye movements with fixation
+                points and duration counts
+              </figcaption>
+            </figure>
+          </section>
+
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">Project Background</h2>
+              <p class="project-section__text">
+                I served as lab coordinator for the Ross School of Business
+                Behavioral lab. During this time, the lab purchased a Tobii
+                eye-tracking system, specifically the Tobii x2-60 eye-tracker
+                model. At the time, Tobii started a new eye tracker
+                certification and asked our team to pilot the program. The task
+                was to design a study, administer it, and report our findings
+                along with our feedback on the program.
+              </p>
+              <p class="project-section__text">
+                Around the same time, the Ross School of Business had undergone
+                a website redesign. Therefore we chose to build a study to gauge
+                the effort needed to find our behavioral lab website (now
+                discontinued).
+              </p>
+            </div>
+          </section>
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">Problem Statement</h2>
+              <p class="project-section__text">
+                The website redesign took place without usability testing or
+                departmental input. The lack of research lead to inaccessibility
+                for various portions of the website from website users and
+                staff.
+              </p>
+            </div>
+          </section>
+
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">The Objective</h2>
+
+              <p class="project-section__text">
+                To determine user flow navigability level of the Ross School of
+                Business Behavioral Lab website and compare it to other business
+                school websites (Columbia Business School and Stanford Graduate
+                School of Business).
+              </p>
+            </div>
+          </section>
+
+          <section class="project-section">
+            <ul class="project-section-list">
+              <h2 class="project-section__title">Research Question</h2>
+
+              <li class="project-section-li">
+                In terms of web page navigation effort level, where does the
+                Ross School of Business Behavioral Lab stand compared to
+                Columbia and Stanford Behavioral lab web pages?
+              </li>
+            </ul>
+          </section>
+
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">Process</h2>
+            </div>
+          </section>
+
+          <section class="project-section section-flex">
+            <div class="project-section__content section-flex-column1">
+              <h3 class="project-section__title">Design</h3>
+              <p class="project-section__text">
+                Due to having a short project window (2 weeks) and the time of
+                the year (mid-December), we chose a within-subject design so
+                each participant could see all three behavioral lab websites as
+                Stimuli. The website presentation was randomized for each
+                participant.
+              </p>
+              <p class="project-section__text">We collected six measures:</p>
+
+              <ul class="project-section-list">
+                <li class="project-section-li">Visual Attention</li>
+                <li class="project-section-li">
+                  The final number of fixation sequence
+                </li>
+                <li class="project-section-li">Brow Forrow</li>
+                <li class="project-section-li">Heatmaps</li>
+                <li class="project-section-li">Area of interest markers</li>
+                <li class="project-section-li">Self-reporting via surveys</li>
+              </ul>
+              <p class="project-section__text">
+                Seven participants took part in the study, with each receiving
+                five short surveys: one pre-survey, three post-stimuli surveys,
+                and a final post-survey.
+              </p>
+            </div>
+            <figure class="project-figure section-flex-column2 project-figure__reduce">
+              <img
+                src="./dist/assets/eyetracking/Eyetracker+setup.png"
+                alt="a sketch of the equipment and furniture set up of the research room"
+                class="project-figure__image"
+              />
+              <figcaption class="project-figure__caption">
+                Experimental room layout showcasing the researcher, participant,
+                and equipment.
+              </figcaption>
+            </figure>
+          </section>
+
+          <section class="project-section">
+              <div class="project-section__content">
+              <h2 class="project-section__title">Findings</h2>
+              <h3 class="project-section__title">
+                Visual Attention and Facial Analysis (Brow Forrow) Results
+              </h3>
+              
+              <ul class="project-section-list">
+                <li class="project-section-li">
+                  On average, participants had the most fixation points on the
+                  Ross website, while participants had the least number of
+                  fixation points when navigating through the Stanford website.
+                </li>
+                <li class="project-section-li">
+                  Participants furrowed their brow more when navigating through the Ross website than they did when viewing the other websites.
+                </li>
+              </ul>
+            </div>
+          </section>
+          
+          <section class="project-section">
+            <section class="project-section figure-group">
+            <figure class="project-figure">
+              <img
+                src="./dist/assets/eyetracking/Fixations.png"
+                alt="bar chart showing average number of pupil fixations"
+                class="project-figure__image"
+              />
+              <figcaption class="project-figure__caption">
+                Average Number of pupil fixations amongst all three websites
+              </figcaption>
+            </figure>
+            <figure class="project-figure">
+              <img
+                src="./dist/assets/eyetracking/Brow furrow.png"
+                alt="bar chart showing average brow furrow rates"
+                class="project-figure__image"
+              />
+              <figcaption class="project-figure__caption">
+                Averag amount participants furrowed their brows while navigating all three websites
+              </figcaption>
+            </figure>
+          </section>
+
+
+          <section class="project-section">
+              <div class="project-section__content">
+                  <h3 class="project-section__title">Survey Results</h3>
+                  <p class="project-section__text">
+                    The survey results indicate participants found that Columbia and Ross websites the most difficult to navigate through. In contrast, Stanford's behavioral lab website was consistently rated easier to navigate. Also, Stanford had the highest number of ratings of "not confused at all." Ross had the highest number of moderately confused participants.
+                    </p>
+              </div>
+          </section>
+          
+         <section class="project-section figure-group">
+            <figure class="project-figure">
+              <img
+                src="./dist/assets/eyetracking/Nav Difficulty Scale.png"
+                alt="website navigation difficulty bar chart"
+                class="project-figure__image"
+              />
+              <figcaption class="project-figure__caption">
+                Survey results of navigation difficulty for all three websites
+              </figcaption>
+            </figure>
+            <figure class="project-figure">
+              <img
+                src="./dist/assets/eyetracking/Confusion Scale.png"
+                alt="confusion scale bar chart"
+                class="project-figure__image"
+              />
+              <figcaption class="project-figure__caption">
+                Survey results of confusion levels of participants for each website
+              </figcaption>
+          </section>
+
+
+          </section>
+
+
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">Limitations</h2>
+              <p class="project-section__text">
+                The study took place in the second half of December which is
+                when our participant base is reduced due to University of
+                Michigan staff and students going on Winterbreak. Because of
+                this, we were only able to get seven participants. Also,
+                navigation cueing was also a limitation but unavoidable given
+                the circumstances.
+              </p>
+            </div>
+          </section>
+
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">Personal Takeaway</h2>
+
+              <p class="project-section__text">
+                I learned the value of eye-tracking and how biometrics in
+                research adds another layer of data collection that cannot be
+                captured when using only computer surveys. With surveys,
+                participants may not provide genuine answers for several
+                reasons. Biometrics gives researchers the ability to record
+                subconscious, split-second reactions to stimuli that can go
+                unreported in self-reports.
+              </p>
+            </div>
+          </section>
+
+          <section class="end-of-project">
+            <hr />
+          </section>
+        </section>
+
+        <section class="collaborate">
+          <div class="collaborate__text">
+            <h2>Interested in doing a project together?</h2>
+            <hr />
+            <a href="./contact.html"
+              ><button class="clear-btn">Contact Me</button></a
+            >
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer__container flex flex-jc-sb flex-ai-c">
+        <a href="/" class="footer__logo">
+          <h3 class="logo1">Michael S Payne II</h3>
+          <h4 class="logo2">UX Researcher & Web Developer</h4>
+        </a>
+
+        <div class="footer__links">
+          <a href="/index.html">Home</a>
+          <a href="/portofolio.html">Portfolio</a>
+          <a href="/resume.html">My Resume</a>
+          <a href="/contact.html">Contact Me</a>
+        </div>
+
+        <div class="footer__social">
+          <a href="https://github.com/MSPayneII"
+            ><title>Github</title
+            ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
+              <path
+                fill="#fafafa"
+                d="M12.5 0C5.594 0 0 5.51 0 12.305c0 5.437 3.581 10.048 8.547 11.674.625.116.854-.265.854-.592 0-.292-.01-1.066-.016-2.092-3.477.742-4.21-1.65-4.21-1.65-.569-1.42-1.39-1.8-1.39-1.8-1.133-.764.087-.748.087-.748 1.255.086 1.914 1.268 1.914 1.268 1.115 1.881 2.927 1.338 3.641 1.024.113-.797.434-1.338.792-1.646-2.776-.308-5.694-1.366-5.694-6.08 0-1.343.484-2.44 1.286-3.302-.14-.31-.562-1.562.11-3.256 0 0 1.047-.33 3.437 1.261 1-.273 2.063-.409 3.125-.415 1.063.006 2.125.142 3.125.415 2.375-1.591 3.422-1.261 3.422-1.261.672 1.694.25 2.945.125 3.256.797.861 1.281 1.959 1.281 3.302 0 4.727-2.921 5.767-5.703 6.07.438.369.844 1.123.844 2.276 0 1.647-.016 2.97-.016 3.37 0 .322.22.707.86.584 5-1.615 8.579-6.23 8.579-11.658C25 5.509 19.403 0 12.5 0z"
+              /></svg
+          ></a>
+          <a href="https://www.linkedin.com/in/michaelspayneii/"
+            ><title>LinkedIn</title
+            ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <path
+                fill="#fafafa"
+                d="M21.6 0H2.4C1.08 0 0 1.08 0 2.4v19.2C0 22.92 1.08 24 2.4 24h19.2c1.32 0 2.4-1.08 2.4-2.4V2.4C24 1.08 22.92 0 21.6 0zM7.2 20.4H3.6V9.6h3.6v10.8zM5.4 7.56c-1.2 0-2.16-.96-2.16-2.16 0-1.2.96-2.16 2.16-2.16 1.2 0 2.16.96 2.16 2.16 0 1.2-.96 2.16-2.16 2.16zm15 12.84h-3.6v-6.36c0-.96-.84-1.8-1.8-1.8-.96 0-1.8.84-1.8 1.8v6.36H9.6V9.6h3.6v1.44c.6-.96 1.92-1.68 3-1.68 2.28 0 4.2 1.92 4.2 4.2v6.84z"
+              /></svg
+          ></a>
+          <a href="https://www.instagram.com/nopaynenogayne8586/"
+            ><title>Instagram</title
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#fafafa"
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+              /></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="./dist/js/script.js"></script>
+  </body>
+</html>
+

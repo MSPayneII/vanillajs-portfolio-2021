@@ -1,49 +1,51 @@
-.glider-contain {
-  width: 90%;
-  margin-bottom: 2.5rem;
+.project-section {
+  .glider-contain {
+    width: 90%;
+    margin-bottom: 2.5rem;
 
-  .glider-prev,
-  .glider-next {
-    color: $darkBlue;
-    font-size: 3.75rem;
-  }
-  .glider-prev {
-    left: -2.5rem;
-
-    &.disabled {
-      color: $grayishDarkBlue;
-      opacity: 0.35rem;
+    .glider-prev,
+    .glider-next {
+      color: $darkBlue;
+      font-size: 3.75rem;
     }
-  }
-  .glider-next {
-    right: -2.5rem;
+    .glider-prev {
+      left: -2.5rem;
 
-    &.disabled {
-      color: $grayishDarkBlue;
-      opacity: 0.35rem;
+      &.disabled {
+        color: $grayishDarkBlue;
+        opacity: 0.35rem;
+      }
     }
-  }
+    .glider-next {
+      right: -2.5rem;
 
-  .glider-dots {
-    padding: 1rem;
-  }
-
-  .glider-dot {
-    background-color: $grayishDarkBlue;
-    height: 1rem;
-    width: 1rem;
-
-    @include breakpoint-up(large) {
-      height: 1.2rem;
-      width: 1.2rem;
+      &.disabled {
+        color: $grayishDarkBlue;
+        opacity: 0.35rem;
+      }
     }
 
-    &.active {
-      background-color: $cyan;
+    .glider-dots {
+      padding: 1rem;
     }
 
-    &:hover {
-      background-color: $cyan;
+    .glider-dot {
+      background-color: $grayishDarkBlue;
+      height: 1rem;
+      width: 1rem;
+
+      @include breakpoint-up(large) {
+        height: 1.2rem;
+        width: 1.2rem;
+      }
+
+      &.active {
+        background-color: $cyan;
+      }
+
+      &:hover {
+        background-color: $cyan;
+      }
     }
   }
 }

@@ -23,13 +23,12 @@
       <header class="header">
         <div class="overlay has-fade"></div>
 
-        <nav class="flex flex-jc-sb flex-ai-c">
-          <section href="/index.html" class="header__logo">
+        <section class="flex flex-jc-sb flex-ai-c">
+          <div href="/index.html" class="header__logo">
             <h3 class="logo1">Michael S Payne II</h3>
-            <h4 class="logo2">UX Researcher & Web Developer</h4>
-          </section>
+            <h4 class="logo2">UX Researcher | Web Developer</h4>
+          </div>
 
-          <!-- originally an a tag -->
           <button
             id="btnHamburger"
             class="header__toggle hide-for-desktop"
@@ -40,19 +39,25 @@
             <span></span>
           </button>
 
-          <ul class="header__links hide-for-mobile">
-            <li><a href="/index.html" class="link-active">Home</a></li>
+          <nav class="header__links hide-for-mobile">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li>
+                <a href="/portofolio.html" class="link-active">Portfolio</a>
+              </li>
+              <li><a href="/resume.html">My Resume</a></li>
+              <li><a href="/contact.html">Contact Me</a></li>
+            </ul>
+          </nav>
+        </section>
+        <nav class="header__menu has-fade">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="/portofolio.html">Portfolio</a></li>
             <li><a href="/resume.html">My Resume</a></li>
             <li><a href="/contact.html">Contact Me</a></li>
           </ul>
         </nav>
-        <ul class="header__menu has-fade">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/portofolio.html">Portfolio</a></li>
-          <li><a href="/resume.html">My Resume</a></li>
-          <li><a href="/contact.html">Contact Me</a></li>
-        </ul>
       </header>
       <main>
         <section class="project-hero">
@@ -62,97 +67,117 @@
         <section class="project-details">
           <hr />
           <div class="project-details__text">
-            <h2>Audience Expansion</h2>
+            <h1>Audience Expansion</h1>
 
             <section class="statistics">
-              <div class="statistics__section">
-                <p>Client:</p>
-                <p class="statistics__stat">Journeys International</p>
-              </div>
-              <div class="statistics__section">
-                <p>Category:</p>
-                <p class="statistics__stat">Research & Design</p>
-              </div>
-              <div class="statistics__section">
-                <p>Duration:</p>
-                <p class="statistics__stat">Feb 2020 - Apr 2020</p>
-              </div>
-              <div class="statistics__section">
-                <p>Team Size:</p>
-                <p class="statistics__stat">4</p>
-              </div>
+              <article class="statistics__section1">
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Client</strong><br />
+                    Journeys International
+                  </p>
+                </div>
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Time</strong><br />
+                    Feb 2020 - Apr 2020
+                  </p>
+                </div>
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Role</strong><br />
+                    UX Researcher
+                  </p>
+                </div>
+              </article>
 
-              <div class="statistics__section">
-                <p>My Role:</p>
-                <p class="statistics__stat">UX Researcher</p>
-              </div>
-
-              <div class="statistics__section">
-                <p>Skills:</p>
-                <p class="statistics__stat">
-                  Interviews, Data Analysis, Affinity Diagramming, Report
-                  Writing
-                </p>
-              </div>
+              <article class="statistics__section2">
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Category</strong><br />
+                    Research & Design
+                  </p>
+                </div>
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Team Size</strong><br />
+                    4
+                  </p>
+                </div>
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Skills</strong><br />
+                    Interviews, Data Analysis, Affinity Diagramming, Report
+                    Writing
+                  </p>
+                </div>
+              </article>
             </section>
-            <p>
+          </div>
+          <hr />
+        </section>
+
+        <!-- <p>
               For this project, my team worked with Journeys International to
               help the company gain an understanding of how individuals younger
               than their current target audience approach adventure travel. We
               define adventure travel as a trip that promotes self-growth and
               unique experiential activities.
-            </p>
-          </div>
-          <hr />
-        </section>
+            </p> -->
 
         <section class="project-story">
-          <section class="project-section-header">
-            <h2>What is Journeys International?</h2>
-
-            <p class="project-section-text">
-              Journeys International is a travel agency known for its highly
-              customized travel itineraries. The company was founded by Joan and
-              Will Weber in 1978 in an effort to provide more options for
-              eco-friendly and culturally respectful travel. To this day, the
-              company adheres to this mission. A local guide accompanies
-              tourists on each trip, and Journeys collaborates with various
-              non-profits in an effort to offset carbon output from air travel.
-              Despite its small size of fewer than 20 employees, the Ann
-              Arbor-based company has received several accolades from noteworthy
-              publishers, including Conde Nast, Travel and Leisure, and National
-              Geographic.
-            </p>
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">
+                What is Journeys International?
+              </h2>
+              <p class="project-section__text">
+                Journeys International is a travel agency known for its highly
+                customized travel itineraries. The company was founded by Joan
+                and Will Weber in 1978 in an effort to provide more options for
+                eco-friendly and culturally respectful travel. To this day, the
+                company adheres to this mission. A local guide accompanies
+                tourists on each trip, and Journeys collaborates with various
+                non-profits in an effort to offset carbon output from air
+                travel. Despite its small size of fewer than 20 employees, the
+                Ann Arbor-based company has received several accolades from
+                noteworthy publishers, including Conde Nast, Travel and Leisure,
+                and National Geographic.
+              </p>
+            </div>
           </section>
 
-          <section class="project-section-header">
-            <h2>Objective</h2>
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">Objective</h2>
 
-            <p class="project-section-text">
-              As the company pivots to expand its market, the goal was to
-              understand the preferences and motivations of travel-inclined
-              people aged 30-45 and provide recommendations for attracting this
-              audience.
-            </p>
+              <p class="project-section__text">
+                As the company pivots to expand its market, the goal was to
+                understand the preferences and motivations of travel-inclined
+                people aged 30-45 and provide recommendations for attracting
+                this audience.
+              </p>
+            </div>
           </section>
 
-          <section class="project-section-header">
-            <h2>
-              Presentation Detailing Process, Findings, and Recommendations
-            </h2>
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">
+                Presentation Detailing Process, Findings, and Recommendations
+              </h2>
+              <p class="project-section__text">
+                To change slides in the slider below, you can:
+              </p>
 
-            <p class="project-section-text">
-              To change slides in the slider below, you can:
-            </p>
-            <ul>
-              <li class="project-section-li">Click the arrow icons</li>
-              <li class="project-section-li">
-                Drag or swipe left/right on a slide
-              </li>
-              <li class="project-section-li">Tab + enter</li>
-              <li class="project-section-li">Click on a dot directly</li>
-            </ul>
-
+              <ul class="project-section-list">
+                <li class="project-section-li">Click the arrow icons</li>
+                <li class="project-section-li">
+                  Drag or swipe left/right on a slide
+                </li>
+                <li class="project-section-li">Tab + enter</li>
+                <li class="project-section-li">Click on a dot directly</li>
+              </ul>
+            </div>
             <section class="glider-contain">
               <div class="glider">
                 <div>
@@ -246,17 +271,19 @@
             </section>
           </section>
 
-          <section class="project-section-header">
-            <h2>Personal Takeaway</h2>
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">Personal Takeaway</h2>
 
-            <p class="project-section-text">
-              I had little knowledge of Michigan's voting system before starting
-              this project but learned a great deal speaking with professionals
-              in the voting space and hearing their stories. I have the utmost
-              respect for all civil servants dedicating their lives to
-              protecting democracy and keeping voters informed with accurate
-              information.
-            </p>
+              <p class="project-section__text">
+                I had little knowledge of Michigan's voting system before
+                starting this project but learned a great deal speaking with
+                professionals in the voting space and hearing their stories. I
+                have the utmost respect for all civil servants dedicating their
+                lives to protecting democracy and keeping voters informed with
+                accurate information.
+              </p>
+            </div>
           </section>
 
           <section class="last-section">
