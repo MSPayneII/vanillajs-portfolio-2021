@@ -64,15 +64,15 @@ const projects = [
     desc:
       "An updated usability assesement analysis of the Banned & Challenged Books website",
   },
-  {
-    title: "Software Evaluation",
-    category: "Research & Design",
-    client: "Michigan Township Association",
-    img: "./dist/assets/mtathumbnail.png",
-    url: "/mtaproject.html",
-    desc:
-      "A software assessment of virtual meeting platforms MTA membership use to host OMA-compliant meetings during the pandemic",
-  },
+  // {
+  //   title: "Software Evaluation",
+  //   category: "Research & Design",
+  //   client: "Michigan Township Association",
+  //   img: "./dist/assets/mtathumbnail.png",
+  //   url: "/mtaproject.html",
+  //   desc:
+  //     "A software assessment of virtual meeting platforms MTA membership use to host OMA-compliant meetings during the pandemic",
+  // },
 
   {
     title: "Social Media Dash",
@@ -145,13 +145,13 @@ const projects = [
   //   desc:
   //     "For this project I built an app that shows totally accurate, up to the date global rankings for iSchools all over the world JK.",
   // },
-  {
-    title: "ListMaker 3000",
-    category: "App Dev",
-    client: "Personal Project",
-    img: "./dist/assets/listmaker3000.png",
-    url: "/listmakerproject.html",
-    desc:
-      "An app that allows users to create, update, and delete checklists and the items contained in those checklists using '2-level' CRUD and Firebase",
-  },
+  // {
+  //   title: "ListMaker 3000",
+  //   category: "App Dev",
+  //   client: "Personal Project",
+  //   img: "./dist/assets/listmaker3000.png",
+  //   url: "/listmakerproject.html",
+  //   desc:
+  //     "An app that allows users to create, update, and delete checklists and the items contained in those checklists using '2-level' CRUD and Firebase",
+  // },
 ];

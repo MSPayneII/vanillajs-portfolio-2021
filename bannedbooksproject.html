@@ -19,11 +19,11 @@
       <header class="header">
         <div class="overlay has-fade"></div>
 
-        <nav class="flex flex-jc-sb flex-ai-c">
-          <section href="/index.html" class="header__logo">
+        <section class="flex flex-jc-sb flex-ai-c">
+          <div href="/index.html" class="header__logo">
             <h3 class="logo1">Michael S Payne II</h3>
-            <h4 class="logo2">UX Researcher & Web Developer</h4>
-          </section>
+            <h4 class="logo2">UX Researcher | Web Developer</h4>
+          </div>
 
           <!-- originally an a tag -->
           <button
@@ -36,19 +36,25 @@
             <span></span>
           </button>
 
-          <ul class="header__links hide-for-mobile">
-            <li><a href="/index.html" class="link-active">Home</a></li>
+          <nav class="header__links hide-for-mobile">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li>
+                <a href="/portofolio.html" class="link-active">Portfolio</a>
+              </li>
+              <li><a href="/resume.html">My Resume</a></li>
+              <li><a href="/contact.html">Contact Me</a></li>
+            </ul>
+          </nav>
+        </section>
+        <nav class="header__menu has-fade">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="/portofolio.html">Portfolio</a></li>
             <li><a href="/resume.html">My Resume</a></li>
             <li><a href="/contact.html">Contact Me</a></li>
           </ul>
         </nav>
-        <ul class="header__menu has-fade">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/portofolio.html">Portfolio</a></li>
-          <li><a href="/resume.html">My Resume</a></li>
-          <li><a href="/contact.html">Contact Me</a></li>
-        </ul>
       </header>
       <main>
         <section class="project-hero">
@@ -61,90 +67,257 @@
             <h1>Banned Books</h1>
 
             <section class="statistics">
-              <div class="statistics__section">
-                <p>Client:</p>
-                <p class="statistics__stat">American Library Association</p>
-              </div>
-              <div class="statistics__section">
-                <p>Category:</p>
-                <p class="statistics__stat">Research & Design</p>
-              </div>
-              <div class="statistics__section">
-                <p>Team Size:</p>
-                <p class="statistics__stat">3</p>
-              </div>
-              <div class="statistics__section">
-                <p>Duration:</p>
-                <p class="statistics__stat">Ongoing</p>
-              </div>
-
-              <div class="statistics__section">
-                <p>My Role:</p>
-                <p class="statistics__stat">UX Researcher</p>
-              </div>
-
-              <div class="statistics__section">
-                <p>Skills:</p>
-                <p class="statistics__stat">
-                  Interviews, Data Analysis, Survey Design, Usability Test,
-                  Report Writing
-                </p>
-              </div>
+              <article class="statistics__section1">
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Client</strong><br />
+                    The Office of Intellectual Freedom within the American
+                    Library Association
+                  </p>
+                </div>
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Time</strong><br />
+                    4 months (Jan 2019 - Apr 2019)
+                  </p>
+                </div>
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Role</strong><br />
+                    UX Researcher
+                  </p>
+                </div>
+              </article>
+              <article class="statistics__section2">
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Category</strong><br />
+                    Research & Design
+                  </p>
+                </div>
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Team Size</strong><br />4
+                  </p>
+                </div>
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Skills</strong><br />
+                    Qualtrics, Semi-structured Interviews, Interaction mapping,
+                    Personas, Comparative Analysis, Heuristic Evaluation, User
+                    Preference Test, Usability Test
+                  </p>
+                </div>
+              </article>
             </section>
-            <p>
-              I'd love to hear about what you're working on and how I could
-              help. I recently graduated with my masters in Information Science
-              from the University of Michigan, so I'm currently looking for a
-              new role and am open to a wide range of opportunities. I'm also a
-              caregiver for my mother; therefore, my preference would be to find
-              a position in a company in Michigan. I'm a hard-working and
-              positive person who will always approach each task with a sense of
-              purpose and attention to detail. Please feel free to get in touch
-              using the form below.
-            </p>
           </div>
           <hr />
         </section>
 
         <section class="project-story">
-          <section class="project-section-header">
-            <h2>Project Background</h2>
+          <section class="project-section section-flex">
+            <div class="project-section__content section-flex-column1">
+              <h2 class="project-section__title">Project Background</h2>
 
-            <p class="project-section-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
-              quaerat blanditiis? Animi architecto a cum inventore, doloribus
-              quisquam. Quis expedita nihil quaerat, similique consequuntur
-              doloremque praesentium harum nulla animi nesciunt eveniet facere
-              deleniti commodi obcaecati, molestiae, blanditiis et quasi sit
-              quibusdam eligendi temporibus. Nisi ad tempora recusandae tenetur
-              porro veniam labore quisquam ab numquam cum, rerum, dolorum id
-              amet quis nostrum illo asperiores facilis similique. Similique
-              suscipit iure in? Quo tenetur mollitia ipsum nemo asperiores
-              voluptas vitae explicabo ratione provident necessitatibus eligendi
-              voluptatibus cum odit earum, libero esse laudantium veritatis
-              dicta possimus minima odio sint. Facere placeat ea deserunt eaque.
-            </p>
+              <p class="project-section__text">
+                The Banned Books website is a resource for individuals who want
+                to research banned or challenged books to learn about censorship
+                of literature. The Office of Intellectual Freedom, a department
+                within the American Library Association that implements policies
+                concerning intellectual freedom and free access to libraries and
+                library materials, manages the website.
+              </p>
+              <p class="project-section__text">
+                The Banned Books website is easily confused with Banned Books
+                Week," a sibling website dedicated to the week-long annual and
+                nationally hosted event organized by the OIF.
+              </p>
+            </div>
+
+            <figure class="project-figure section-flex-column2">
+              <img
+                src="./dist/assets/bannedbooks/bandblandpg.png"
+                alt=""
+                class="project-figure__image"
+              />
+              <figcaption class="project-figure__caption"></figcaption>
+            </figure>
           </section>
-        <section class="project-story">
-          <section class="project-section-header">
-            <h2>Presentation Detailing Process, Findings, and Recommendations</h2>
-            
 
-            <iframe class="project-video" src="https://www.youtube.com/embed/Qhkwkwjglsc?hl=en&amp;cc_lang_pref=en&amp;cc_load_policy=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">Problem Statement</h2>
+              <p class="project-section__text">
+                The OIF redesigned the Banned Books website two years prior and
+                wants to make sure those changes allow users access to
+                frequently requested materials and easy navigation throughout
+                the website.
+              </p>
+            </div>
           </section>
-          
-        </section>
-        <section class="last-section">
-            <hr/>
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">The Objective</h2>
+              <p class="project-section__text">
+                To perform a needs assessment and usability evaluation of the
+                website using a seven-step methodology to understand where users
+                experienced difficulty and provide recommendations to address
+                those issues.
+              </p>
+            </div>
+          </section>
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">Process</h2>
+              <p class="project-section__text"></p>
+            </div>
+          </section>
 
+          <section class="feature-grid">
+            <article class="feature-item">
+              <h3 class="feature-item__title">Interaction Mapping</h3>
+              <p class="feature-item__description">
+                A visualization of user pathways when navigating the website
+              </p>
+            </article>
+            <article class="feature-item">
+              <h3 class="feature-item__title">User Interviews</h3>
+              <p class="feature-item__description">
+                We interviewed the appropriate user groups to discuss their
+                general attitudes on book censorship and their opinions of the
+                current website
+              </p>
+            </article>
+            <article class="feature-item">
+              <h3 class="feature-item__title">Comparative Analysis</h3>
+              <p class="feature-item__description">
+                We analyzed comparative sites further to identify the strengths
+                and weaknesses of the current website configuration
+              </p>
+            </article>
+            <article class="feature-item">
+              <h3 class="feature-item__title">User Survey</h3>
+              <p class="feature-item__description">
+                Distributed a 30 question survey to target users gathering
+                additional data about general attitudes, knowledge, and opinions
+                about the Banned Books website
+              </p>
+            </article>
+            <article class="feature-item">
+              <h3 class="feature-item__title">Hueristic Evaluation</h3>
+              <p class="feature-item__description">
+                Each team member performed a heuristic evaluation of the Banned
+                Books website to identify major usability issues
+              </p>
+            </article>
+            <article class="feature-item">
+              <h3 class="feature-item__title">User Preference</h3>
+              <p class="feature-item__description">
+                Created a test for users to compare the current Banned Books
+                landing page with a reformatted version
+              </p>
+            </article>
+            <article class="feature-item">
+              <h3 class="feature-item__title">Usability Testing</h3>
+              <p class="feature-item__description">
+                We performed a moderated usability test with users to understand
+                their experience navigating the Banned Books website
+              </p>
+            </article>
+          </section>
+
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">Overall Findings</h2>
+              <ul class="project-section-list">
+                <li class="project-section-li">
+                  The navigation on the Banned Books website is not intuitive.
+                  It can be difficult for a user to decipher, which was highly
+                  evident in our Usability testing. Users generally expected to
+                  navigate the site at or near the top of the page and expressed
+                  confusion by the need to scroll down the page to find the
+                  navigation. In addition, the connection between the Banned
+                  Books Website and the ALA Store was difficult for users to
+                  find and navigate back from because accessing the ALA store
+                  redirects users out of the Banned Books site into a different
+                  section of the ALA website.
+                </li>
+                <li class="project-section-li">
+                  Users and potential users are interested in censorship and
+                  think that discussing it is essential. Based on data gathered
+                  from our interviews and surveys, users expressed interest in
+                  discussing censorship and banned books because they find the
+                  reasons why books are banned fascinating.
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">Main Recommendations</h2>
+              <ul class="project-section-list">
+                <li class="project-section-li">
+                  Create a visible navigation bar at the top or left side of the
+                  homepage
+                </li>
+                <li class="project-section-li">
+                  Add a discussion section or forum to the webpage in place of “
+                  Top 10 Most Challenged Books”. Can also Combine “Most
+                  Challenged Books” and “Frequently Challenged books”
+                </li>
+                <li class="project-section-li">
+                  Highlight the link to the ALA Store, and warn users they are
+                  leaving the Banned Books Webpage when they click it
+                </li>
+                <li class="project-section-li">
+                  Add a redirect link to the Banned Books website on both the
+                  ALA store and Banned Books Week landing page
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">Personal Takeaway</h2>
+              <p class="project-section__text">
+                If there were one area I could go back and improve, it would be
+                the User Preference test. In hindsight, I feel we could have
+                done a more comprehensive test, incorporating additional pages
+                rather than focusing solely on the landing page. I believe we
+                missed out on a lot of rich information by limiting ourselves to
+                one page.
+              </p>
+            </div>
+          </section>
+
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">
+                Presentation Detailing Process, Findings, and Recommendations
+              </h2>
+            </div>
+
+            <iframe
+              class="project-video"
+              src="https://www.youtube.com/embed/Qhkwkwjglsc?hl=en&amp;cc_lang_pref=en&amp;cc_load_policy=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </section>
+
+          <section class="end-of-project"><hr /></section>
         </section>
 
         <section class="collaborate">
           <div class="collaborate__text">
             <h2>Interested in doing a project together?</h2>
             <hr />
-            <a href="./contact.html"><button class="clear-btn">Contact Me</button></a>
-            
+            <a href="./contact.html"
+              ><button class="clear-btn">Contact Me</button></a
+            >
           </div>
         </section>
       </main>
@@ -159,9 +332,7 @@
         <div class="footer__links">
           <a href="/index.html">Home</a>
           <a href="/portofolio.html">Portfolio</a>
-          <a href="/resume.html" 
-            > My Resume</a
-          >
+          <a href="/resume.html"> My Resume</a>
           <a href="/contact.html">Contact Me</a>
         </div>
 

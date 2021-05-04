@@ -19,11 +19,11 @@
       <header class="header">
         <div class="overlay has-fade"></div>
 
-        <nav class="flex flex-jc-sb flex-ai-c">
-          <section href="/index.html" class="header__logo">
+        <section class="flex flex-jc-sb flex-ai-c">
+          <div href="/index.html" class="header__logo">
             <h3 class="logo1">Michael S Payne II</h3>
-            <h4 class="logo2">UX Researcher & Web Developer</h4>
-          </section>
+            <h4 class="logo2">UX Researcher | Web Developer</h4>
+          </div>
 
           <!-- originally an a tag -->
           <button
@@ -36,19 +36,25 @@
             <span></span>
           </button>
 
-          <ul class="header__links hide-for-mobile">
-            <li><a href="/index.html" class="link-active">Home</a></li>
+          <nav class="header__links hide-for-mobile">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li>
+                <a href="/portofolio.html" class="link-active">Portfolio</a>
+              </li>
+              <li><a href="/resume.html">My Resume</a></li>
+              <li><a href="/contact.html">Contact Me</a></li>
+            </ul>
+          </nav>
+        </section>
+        <nav class="header__menu has-fade">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="/portofolio.html">Portfolio</a></li>
             <li><a href="/resume.html">My Resume</a></li>
             <li><a href="/contact.html">Contact Me</a></li>
           </ul>
         </nav>
-        <ul class="header__menu has-fade">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/portofolio.html">Portfolio</a></li>
-          <li><a href="/resume.html">My Resume</a></li>
-          <li><a href="/contact.html">Contact Me</a></li>
-        </ul>
       </header>
       <main>
         <section class="project-hero">
@@ -61,94 +67,118 @@
             <h1>Social Media Dash</h1>
 
             <section class="statistics">
-              <div class="statistics__section">
-                <p>Client:</p>
-                <p class="statistics__stat">Personal Project</p>
-              </div>
-              <div class="statistics__section">
-                <p>Category:</p>
-                <p class="statistics__stat">Web Design</p>
-              </div>
-              <div class="statistics__section">
-                <p>Team Size:</p>
-                <p class="statistics__stat">1</p>
-              </div>
-
-              <div class="statistics__section">
-                <p>My Role:</p>
-                <p class="statistics__stat">Developer</p>
-              </div>
-
-              <div class="statistics__section">
-                <p>Skills:</p>
-                <p class="statistics__stat">HTML, CSS, SCSS, JS</p>
-              </div>
+              <article class="statistics__section1">
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Client</strong><br />
+                    Personal Project
+                  </p>
+                </div>
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Tools</strong><br />
+                    HTML, CSS, SCSS, JS
+                  </p>
+                </div>
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Role</strong><br />
+                    Developer
+                  </p>
+                </div>
+              </article>
+              <article class="statistics__section2">
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Category</strong><br />
+                    Web Design
+                  </p>
+                </div>
+                <div class="statistics__section-div">
+                  <p class="statistics__stat">
+                    <strong>Team Size</strong><br />
+                    1
+                  </p>
+                </div>
+              </article>
 
               <div class="website-btn">
                 <a
                   href="https://mspayneii.github.io/fem-social-media-dashboard/"
-                  ><button class="clear-btn" type="button">
+                  ><button class="action-btn" type="button">
                     View Website
                   </button></a
                 >
               </div>
             </section>
-            <p>
-              This project was a frontend challenge from Frontend Mentor. To
-              learn and grow as an aspiring developer, I practice building
-              components and websites to a provided style guide and project
-              brief. Each challenge's goal is to build them as close to the
-              designs as possible using any coding tool and style I prefer.
-              Frontend Mentor challenges allow me to improve my development
-              strategies and solve real-world coding problems.
-            </p>
           </div>
           <hr />
         </section>
 
         <section class="project-story">
-          <section class="project-section-header">
-            <h2>What is it?</h2>
+          <section class="project-section">
+            <div class="project-section-div">
+              <h2 class="project-section__title">Project Background</h2>
 
-            <p class="project-section-text">
-              A fully responsive social media dashboard landing page with a
-              color theme switcher.
-            </p>
+              <p class="project-section__text">
+                This project was a frontend challenge from Frontend Mentor. To
+                learn and grow as an aspiring developer, I practice building
+                components and websites to a provided style guide and project
+                brief. Each challenge's goal is to build them as close to the
+                designs as possible using any coding tool and style I prefer.
+                Frontend Mentor challenges allow me to improve my development
+                strategies and solve real-world coding problems.
+              </p>
+            </div>
           </section>
-          <section class="project-section-header">
-            <h2>What can you do with it?</h2>
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">What is it?</h2>
 
-            <p class="project-section-ul-text">Users will be able to:</p>
-            <ul>
-              <li class="project-section-li">
-                View the optimal layout for the site depending on their device's
-                screen size
-              </li>
-              <li class="project-section-li">
-                See hover states for all interactive elements on the page
-              </li>
-              <li class="project-section-li">
-                Toggle color theme to their preference
-              </li>
-            </ul>
+              <p class="project-section__text">
+                A fully responsive social media dashboard landing page with a
+                color theme switcher.
+              </p>
+            </div>
           </section>
-          <section class="project-section-header">
-            <h2>My Approach</h2>
+          <section class="project-section">
+            <div class="project-section__content">
+              <h2 class="project-section__title">What can you do with it?</h2>
 
-            <p class="project-section-text">
-              I adopt a "mobile-first" approach as my default and working my way
-              up to larger viewports through responsive design. I organize my
-              files by creating a dist, SCSS, and JS folders. Next, I review the
-              provided style guide to note typography, font sizes, and the color
-              palette to create my SCSS variables. After that, I check design
-              images, icons, determine margins and padding, and think about HTML
-              markup and layout. Once my project prep is finished, I start
-              designing the header and work my way down the design with each
-              component.
-            </p>
+              <p class="project-section-ul-text">Users will be able to:</p>
+              <ul class="project-section-list">
+                <li class="project-section-li">
+                  View the optimal layout for the site depending on their
+                  device's screen size
+                </li>
+                <li class="project-section-li">
+                  See hover states for all interactive elements on the page
+                </li>
+                <li class="project-section-li">
+                  Toggle color theme to their preference
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="project-section">
+            <div class="project-section-div">
+              <h2 class="project-section__title">My Approach</h2>
+
+              <p class="project-section__text">
+                I adopt a "mobile-first" approach as my default and working my
+                way up to larger viewports through responsive design. I organize
+                my files by creating a dist, SCSS, and JS folders. Next, I
+                review the provided style guide to note typography, font sizes,
+                and the color palette to create my SCSS variables. After that, I
+                check design images, icons, determine margins and padding, and
+                think about HTML markup and layout. Once my project prep is
+                finished, I start designing the header and work my way down the
+                design with each component.
+              </p>
+            </div>
           </section>
         </section>
-        <section class="last-section">
+        <section class="end-of-project">
           <hr />
         </section>
 
