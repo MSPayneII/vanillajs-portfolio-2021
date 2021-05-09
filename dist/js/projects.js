@@ -12,7 +12,7 @@ const projects = [
     title: "Food Route Design",
     category: "Graphic Design",
     client: "Adobe Design Challenge",
-    img: "./dist/assets/foodroutethumbnail.png",
+    img: "./dist/assets/foodroutedesign/foodroutedesign.png",
     url: "/foodroutedesignproject.html",
     desc:
       "A prototype community-based platform for individuals to receive and give assistance to one another",
@@ -109,6 +109,14 @@ const projects = [
     url: "/pricecomponent.html",
     desc:
       "An interactive pricing component complete with a custom range input slider and pricing toggle in this project",
+  },
+  {
+    title: "Meet Landing Page",
+    category: "Web Dev",
+    client: "Personal Project",
+    img: "./dist/assets/meet-landing.png",
+    url: "/meetlandingpage.html",
+    desc: "A fully responsive landing page design built with HTML and CSS",
   },
   {
     title: "Card Components",

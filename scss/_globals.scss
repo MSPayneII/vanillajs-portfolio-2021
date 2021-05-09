@@ -189,6 +189,7 @@ body {
   border: none;
   font-size: $navButtons;
   letter-spacing: 2px;
+  cursor: pointer;
 
   &:hover {
     background-color: $cyan;
@@ -206,6 +207,7 @@ body {
   border: 1px solid $grayishDarkBlue;
   font-size: $navButtons;
   letter-spacing: 2px;
+  cursor: pointer;
 
   &:hover {
     background-color: $grayishDarkBlue;

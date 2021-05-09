@@ -179,6 +179,7 @@ body {
   border: none;
   font-size: 0.75rem;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .action-btn:hover {
@@ -195,6 +196,7 @@ body {
   border: 1px solid #33323d;
   font-size: 0.75rem;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .clear-btn:hover {
@@ -1725,6 +1727,40 @@ body {
 
 .eyetracking-hero-image {
   background-image: url("../assets/eyetrackerthumb.png");
+}
+
+.foodroutedesign-hero-image {
+  background-image: url("../assets/foodroutedesign/foodroutedesign.png");
+  height: 12.75rem;
+}
+
+@media (min-width: 40em) {
+  .foodroutedesign-hero-image {
+    height: 28rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .foodroutedesign-hero-image {
+    height: 41.25rem;
+  }
+}
+
+.meet-landing-hero-image {
+  background-image: url("../assets/meet-landing.png");
+  height: 12.75rem;
+}
+
+@media (min-width: 40em) {
+  .meet-landing-hero-image {
+    height: 28rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .meet-landing-hero-image {
+    height: 41.25rem;
+  }
 }
 
 .resume {

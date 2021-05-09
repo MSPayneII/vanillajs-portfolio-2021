@@ -404,3 +404,26 @@
 .eyetracking-hero-image {
   background-image: url("../assets/eyetrackerthumb.png");
 }
+
+.foodroutedesign-hero-image {
+  background-image: url("../assets/foodroutedesign/foodroutedesign.png");
+  height: 12.75rem;
+
+  @include breakpoint-up(medium) {
+    height: 28rem;
+  }
+  @include breakpoint-up(large) {
+    height: 41.25rem;
+  }
+}
+.meet-landing-hero-image {
+  background-image: url("../assets/meet-landing.png");
+  height: 12.75rem;
+
+  @include breakpoint-up(medium) {
+    height: 28rem;
+  }
+  @include breakpoint-up(large) {
+    height: 41.25rem;
+  }
+}
