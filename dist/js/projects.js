@@ -12,7 +12,7 @@ const projects = [
     category: "Graphic Design",
     client: "Adobe Design Challenge",
     img: "./dist/assets/foodroutedesign/foodroutedesign.png",
-    url: "/foodroutedesignproject.html",
+    url: "#", ///foodroutedesignproject.html
     desc: "A prototype community-based platform for individuals to receive and give assistance to one another",
   },
   {
@@ -123,14 +123,14 @@ const projects = [
     url: "/signupcompproject.html",
     desc: "A responsive sign-up form complete with client-side validation",
   },
-  {
-    title: "Food Route Prototype",
-    category: "App Dev",
-    client: "Personal Project",
-    img: "./dist/assets/foodroutedev.png",
-    url: "/foodrouteprototypeproject.html",
-    desc: "My first attempt at building a community-based platform for individuals to give and receive assistance to one another in the era of COVID-19",
-  },
+  // {
+  //   title: "Food Route Prototype",
+  //   category: "App Dev",
+  //   client: "Personal Project",
+  //   img: "./dist/assets/foodroutedev.png",
+  //   url: "/foodrouteprototypeproject.html",
+  //   desc: "My first attempt at building a community-based platform for individuals to give and receive assistance to one another in the era of COVID-19",
+  // },
   // {
   //   title: "I-School Rankings",
   //   category: "App Dev",
