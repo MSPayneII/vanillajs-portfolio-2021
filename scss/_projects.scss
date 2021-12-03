@@ -359,11 +359,11 @@
   height: 13.5rem;
 
   @include breakpoint-up(medium) {
-    height: 32rem;
+    height: 29rem;
   }
 
   @include breakpoint-up(large) {
-    background-size: 100% 120%;
+    background-size: 100% 122%;
   }
 }
 

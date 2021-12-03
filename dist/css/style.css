@@ -1679,13 +1679,13 @@ body {
 
 @media (min-width: 40em) {
   .eightball-hero-image {
-    height: 32rem;
+    height: 29rem;
   }
 }
 
 @media (min-width: 64em) {
   .eightball-hero-image {
-    background-size: 100% 120%;
+    background-size: 100% 122%;
   }
 }
 
