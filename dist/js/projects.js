@@ -16,6 +16,14 @@ const projects = [
     desc: "A prototype community-based platform for individuals to receive and give assistance to one another",
   },
   {
+    title: "8-Ball Fortune Teller",
+    category: "Web Dev",
+    client: "Bright Paths Program",
+    img: "./dist/assets/eightballpresentationimage.png",
+    url: "8ballfortuneteller.html",
+    desc: "My Bright Path Foundation Capstone project. A digital version of the Magic Eightball produced by Mattel",
+  },
+  {
     title: "Digital Office Space",
     category: "Web Dev",
     client: "Chadsey Condon (CCCO)",
@@ -32,14 +40,14 @@ const projects = [
     desc: "A customer assessment on current and potential customers to provide recommendations for attracting a new audience",
   },
 
-  {
-    title: "Mental Health Prototype",
-    category: "App Dev",
-    client: "Personal Project",
-    img: "./dist/assets/umsithumbnail.png",
-    url: "/",
-    desc: "A Mid-Fi prototype targeting mental health awareness amongst black UM students (my first prototype)",
-  },
+  // {
+  //   title: "Mental Health Prototype",
+  //   category: "App Dev",
+  //   client: "Personal Project",
+  //   img: "./dist/assets/umsithumbnail.png",
+  //   url: "/",
+  //   desc: "A Mid-Fi prototype targeting mental health awareness amongst black UM students (my first prototype)",
+  // },
   {
     title: "Website Comparison",
     category: "Research & Design",
