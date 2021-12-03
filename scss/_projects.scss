@@ -354,6 +354,19 @@
   background-image: url("../assets/umsithumbnail.png");
 }
 
+.eightball-hero-image {
+  background-image: url("../assets/eightballpresentationimage.png");
+  height: 13.5rem;
+
+  @include breakpoint-up(medium) {
+    height: 29rem;
+  }
+
+  @include breakpoint-up(large) {
+    background-size: 100% 120%;
+  }
+}
+
 .umsi-feature-grid {
   display: grid;
   grid-template-columns: 1fr;
